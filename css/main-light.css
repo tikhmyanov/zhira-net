@@ -1,0 +1,763 @@
+/*
+ Table Of Contents
+ 1.) Common Style
+ 2.) Header Section
+ 3.) About Us
+ 4.) Feature Classes
+ 5.) Fitness Classes
+ 6.) Fitness Coaches
+ 7.) Latest Tips News (Blog)
+ 8.) People Says
+ 9.) Fitness Training Studio
+ 10.) Subscribe
+ 11.) Contact Us
+ 12.) Footer
+
+ ===============================================*/
+
+/**
+* Importing Styles.
+**/
+@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,100,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url('font-awesome.min.css');
+@import url('hover-min.css');
+@import url('owl.carousel.css');
+@import url('owl.theme.css');
+@import url('owl.transitions.css');
+@import url('calendar.css');
+@import url('animate.css');
+@import url('strokegap.css');
+
+/**
+* Global Styles.
+**/
+/*
+ 1) - common style
+ ----------------------------------------*/
+ 
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #666666;
+	line-height: 30px;
+}
+
+a {
+	color: #bf2516;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+a:hover {
+	color: #bf2516;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 49px;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 { font-size: 38px; }
+
+h3 { font-size: 32px; }
+
+h4 { font-size: 20px; line-height:28px; }
+h5{font-size:18px;}
+h1,
+h2,
+h3,
+h4, h5 {
+	text-transform: uppercase;
+	color: #444;
+	font-weight: lighter;
+	line-height:1.2;
+	margin:30px 0 10px 0;
+}
+
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong 
+h5 strong{
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
+
+
+section {
+	padding: 100px 0;
+	position: relative;
+	background: #fff;
+	z-index: 2;
+	overflow: hidden;
+}
+
+blockquote,
+code{
+	display:block;
+	border-radius:0;
+	border:0;
+	overflow:hidden;
+	text-align:left;
+	padding:10px 0px 10px 35px
+}
+.photo-frame{
+	width:100px;
+	height:100px;
+	float:left;
+}
+.photo-frame img{
+	width:100px;
+}
+
+code{
+	color: #03C;
+	overflow:auto;
+}
+.form-group{
+	margin-bottom:10px;
+}
+
+blockquote:before,
+code:before{
+	display:block;
+	position:absolute;
+	width:50px;
+	left:0px;
+	top:0;
+	bottom:0;
+	text-align:center;
+	color:#fff;
+}
+
+blockquote:before{
+	font-size:40px;
+	padding-top:15px;
+	}
+
+code:before{
+	content:'</>';
+	font-size:16px;
+	padding-top:25px;
+	}
+
+blockquote small{
+	text-align:right;
+	padding:20px 0 0 0;
+	font-style:italic;
+}
+.btn{
+	background:#e84c3d;
+	border-radius:0px;
+	padding:16px 48px;
+	border:none;
+	font-size:18px;
+	font-weight:600;
+	text-transform:uppercase;
+	color:#fff;
+	border-bottom:4px solid #c33022;
+}
+
+section .section-header{
+	text-align:center;
+	padding:0px 0px;
+	
+}
+.page-header{
+	border-bottom:none;
+	margin: 0px 0 50px;
+}
+section .section-header h2{
+	color:#000;
+	font-weight:600;
+	margin:20px 0px 0px;
+}
+section .section-header .sm-title
+{
+font-size:16px;
+font-weight:400;
+color:#e84c3d;
+text-transform:uppercase;
+}
+
+.blue{
+	color:#4f9aef;
+}
+.red{
+	color:#e84c3d;
+}
+
+ /*
+ 2) Header Section 
+ ----------------------------------------*/
+ .hero-section{
+	 background:url(../img/banner.jpg) no-repeat scroll center center / cover;
+	 position:relative;
+}
+	 
+ .navbar-static-top{
+	 background-color: rgba(0, 0, 0, 0.5);
+	 width:100%;
+ }
+
+
+ .affix{
+	 padding:0px !important;
+ }
+ .affix .navbar-nav{
+	 border-bottom:none;
+ }
+ .navbar{
+	 background-color: rgba(0, 0, 0, 0.5);
+	 padding:0px 0 17px;
+	 margin:0px;
+	 min-height:104px;
+ }
+ .navbar .navbar-brand{
+	 opacity:1;
+ }
+ .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	 background:none;
+ }
+ .dropdown-menu{
+	 background:#000;
+	 top:74px;
+	 padding:0px;
+ }
+.navbar-nav{
+	margin:25px 0px;
+}
+ .navbar-nav li{
+	 margin-top:5px;
+	 margin-left:10px;
+	 opacity:1;
+ }
+ .navbar-nav li a{
+	 color:#fff;
+	 font-size:16px;
+	 text-transform:uppercase;
+	 padding:5px 10px;
+    transition: all 0.5s ease;
+	font-weight:300;
+	opacity:1;
+ }
+  .navbar-nav li:last-child a{
+	 padding:5px 10px;
+	 margin-bottom:1px;
+ }
+  .navbar-nav li a:hover{
+	  background:none;
+	  color:#57a8ff;
+	  transition: all 0.5s ease;
+  }
+  .navbar-nav .active{
+	  background:none;
+	  color:#57a8ff;
+	  transition: all 0.5s ease;
+  }
+  
+ .navbar-toggle .icon-bar{
+	 background:#fff;
+ }
+ .banner-section{
+	padding:0px 0px;
+	background:none;
+	margin-top:-150px;
+	bottom:0px;
+	width:100%;
+ }
+.revolutionary{
+	letter-spacing:16.5px;
+	text-transform:uppercase;
+}
+.banner-section .titles h1{
+	font-family:Raleway;
+	font-weight:bold;
+	color:#e84c3d;
+	font-size:47px;
+	margin:3px 0px;
+}
+.banner-section .grow{
+	font-family:Raleway;
+	text-transform:uppercase;
+	font-size:35px;
+	font-weight:100;
+	color:#fff;
+}
+
+.banner-section p{
+	font-size:20px;
+	font-style:italic;
+	padding:15px 0px;
+	color:#fff;
+}
+ .banner-section .col-md-7{
+	 margin-top:100px;
+ }
+ .banner-section .col-md-5{
+	 margin-top:300px;
+ }
+.banner-section .titles{
+	border-top:1px solid #27394a;
+	border-bottom:1px solid #27394a;
+	padding:15px 0px;
+}
+/*
+ 3) About Us
+ ----------------------------------------*/
+ .about-section{
+	 background:#f8f6fe url(../img/fitness-bg.png) no-repeat right bottom;
+	 padding-bottom:0px;
+	 
+ }
+
+ .about-section blockquote{
+	 border-left:4px solid #e84c3d;
+ }
+  .about-section blockquote h4{
+	  color:#2e3745;
+	  margin:0px 0px 10px;
+  }
+   .about-section blockquote p{
+	   font-size:16px;
+   }
+   .outline{
+	   border:1px solid #d9d9d9;
+	   background:none;
+	   background:#fff;
+	   color:#e04c48;
+   }
+  .about-section .col-md-4 {
+	  margin-top:-100px;
+  }
+   
+   /*
+ 4) Our Classes
+ ----------------------------------------*/
+ .our-classes-section{
+	 background:url(../img/feature-class-bg.png) repeat;
+	 border-top:1px solid #d7d6d7;
+ }
+ .our-classes-section .page-header{
+	 padding:0 0 60px;
+ }
+ .our-classes-section .classes-list .item{
+	 border:1px solid #e5e4e8;
+	 text-align:center;
+	 content:"";
+	 display:block;
+	 padding:0px 15px 30px;
+	 background:#f9f8fd;
+	 color:#666666;
+ }
+ .our-classes-section .classes-list .item:before{
+	 background:#fff;
+ }
+ .our-classes-section h4{
+	 color:#1b283d;
+	 font-weight:600;
+ }
+
+.our-classes-section .classes-list .item .icon-box{
+	 width:85px;
+	 height:85px;
+	 -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+	background:#e84c3d;
+	display:block;
+	position:relative;
+	margin:auto;
+	top:-43px;
+ }
+  .our-classes-section .classes-list .item .icon-box:after{
+	 content:"";
+	  width:85px;
+	 height:85px;
+	display:block;
+	position:relative;
+	margin:auto;
+	border-bottom:1px solid #5c6267;
+	border-right:1px solid #5c6267;
+	top: -60px;
+	left: 8px;
+	 
+ }
+
+ .our-classes-section .classes-list .item .icon-box .weight-icon{
+	 background:url(../img/fitness-icon.png) no-repeat;
+	 width:101px;
+	 height:70px;
+	  -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+	display:block;
+ }
+
+  .our-classes-section .classes-list .item .icon-box .heavy{
+	  background-position:-7px 3px;
+ }
+ .our-classes-section .classes-list .item .icon-box .indoor{
+	  background-position:1px -60px;
+ }
+ .our-classes-section .classes-list .item .icon-box .body{
+	  background-position:-4px -128px;
+ }
+ .our-classes-section .classes-list .item .icon-box .weightloss{
+	  background-position:-7px -215px;
+ }
+    /*
+ 5) Fitness Classes
+ ----------------------------------------*/
+ .fitness-classes-section{
+	 background:#101423;
+	 padding:100px 0px 0px;
+ }
+ .fitness-classes-section .col-md-6 img {
+	 margin-top:-99px;
+	 float:right;
+ }
+ .fitness-classes-section h2{
+	 color:#fff;
+	 font-size:34px;
+	 text-transform:uppercase;
+	 font-weight:300;
+ }
+ .fitness-classes-section p{
+	 color:#b2b3b5;
+	 font-size:24px;
+	 padding:15px 0px;
+ }
+     /*
+ 6) Fitness Coaches
+ ----------------------------------------*/
+ .our-coaches-section{
+	 background:#f8f6fe;
+ }
+ .our-coaches-section .item{
+	 background:#ffffff;
+	 border:1px solid #ebebeb;
+	 display:table;
+	 margin-left:35px;
+	 padding:15px 0px;
+	 color:#656565;
+ }
+ .our-coaches-section .item h5{
+	 color:#de5842;
+	 margin:0px;
+ }
+ .our-coaches-section .item p{
+	 font-size:15px;
+	 padding:10px 0px;
+	 border-top:1px solid #cccbcb;
+ }
+  .our-coaches-section .designation{
+	 color:#b1b1b1;
+	 font-size:13px;
+	 text-transform:uppercase;
+ }
+  .our-coaches-section .social i{
+	  margin-left:20px;
+	  color:#cccbcb;
+  }
+  .our-coaches-section .social i:first-child{
+	  margin:0px;
+  }
+      /*
+ 7) Latest Tips News blog
+ ----------------------------------------*/
+ .blog-section{
+	 background:url(../img/news-bg.jpg) no-repeat scroll center center / cover;
+ }
+ .blog-section .section-header h2{
+ color:#1d2b3e;
+ font-weight:600;
+ }
+ .blog-section figure{
+width: 272px;
+margin: 0px auto;
+position: relative;
+ }
+ .blog-section .date{
+	 background:#e84c3d;
+	 color:#fff;
+	 font-size:20px;
+	 padding:7px;
+	 width:65px;
+	 display:block;
+	 position:absolute;
+	 top:0px;
+	 text-align:center;
+	 line-height:23px;
+ }
+ .blog-section h5{
+	 color:#000;
+	 text-transform:capitalize;
+	 font-weight:600;
+ }
+  .blog-section p{
+	 color:#606060;
+	 font-size:15px;
+ }
+ .blog-sectio .read-more{
+	 font-size:15px;
+ }
+       /*
+ 8) People Says Section
+ ----------------------------------------*/
+ .people-says-section{
+	 background:url(../img/testmonial-bg.jpg) no-repeat scroll center center / cover;
+	 color:#dee0e1;
+ }
+ .people-says-section .section-header h2{
+	 color:#fff;
+ }
+ .people-says-section footer{
+	 color:#e84c3d;
+ }
+        /*
+ 9) People Says Section
+ ----------------------------------------*/
+ .training-studio-section{
+	 background:#f8f6ff;
+	 color:#fff;
+ }
+ .training-studio-section h2{
+	 color:#000;
+	 margin:0px 0px 0px;
+ }
+ .training-studio-section .sm-title{
+	 color:#e84c3d;
+	 text-transform:uppercase;
+ }
+ .training-studio-section p{
+	 padding:20px 0px;
+	 color:#666666;
+ }
+ .training-studio-section ul{
+	 color:#063752;
+ }
+ .training-studio-section .item i{
+	 margin-right:15px;
+ }
+         /*
+ 10) Subscribe
+ ----------------------------------------*/
+ .subscribe-section{
+	 background:url(../img/subscribe-bg.jpg) no-repeat scroll center center / cover;
+	 padding:50px 0px 0px;;
+ }
+ .subscribe-section h2{
+	 font-size:35px;
+	 color:#fff;
+	 font-weight:600;
+ }
+ .subscribe-section .sm-title{
+	 font-size:32px;
+	 color:#fff;
+	 text-transform:uppercase;
+ }
+ .subscribe-section .col-md-4{
+	 margin-top:-50px;
+ }
+ .subscribe-section .form-inline{
+	 padding:50px 0px;
+ }
+ .subscribe-section input{
+	 background:#fdfdfe;
+	 border-radius:0px;
+	 box-shadow:none;
+	 padding:10px 15px ;
+	 font-size:16px;
+	 color:#656565;
+	 height:43px;
+	 width:100% !important;
+ }
+ .subscribe-section .col-lg-6{
+	 padding-left:0px;
+ }
+ .subscribe-section .black{
+	 border:none;
+	 background:#1f1f1f;
+	 color:#fff;
+	 font-size:19px;
+	 text-transform:uppercase;
+	 font-weight:600;
+	 padding:8px 55px;
+ }
+         /*
+ 11)Contact
+ ----------------------------------------*/
+ .contact-section{
+	 background:#f9f7ff;
+	 color:#656565;
+ }
+.contact-section .section-header .sm-title{
+	color:#e84c3d;
+}
+
+ .contact-form .col-sm-6{
+	 padding-right:0px;
+ }
+ .contact-form .col-sm-6 input{
+	 border-right:0px;
+	 }
+  .contact-form .col-sm-5{
+	 padding-left:0px;
+}
+ .contact-form input, .contact-form  textarea{
+	 background:none;
+	 border:1px solid #e4e3e7;
+	 border-radius:0px;
+	 box-shadow:none;
+	 padding:10px 15px ;
+	 font-size:16px;
+	 color:#656565;
+	 background:#fff;
+	 
+ }
+ #error, #success{
+	 display:none;
+ }
+  .contact-form input{
+	  height:58px;
+  }
+.contact-detail ul li{
+	list-style:none;
+	border:1px solid #e4e3e7;
+	background:none;
+	overflow:hidden;
+	margin-bottom:20px;
+	background:#fafafd;
+}
+.contact-detail .icon{
+	font-size:50px;
+	color:#e84c3d;
+	background:none;
+	padding:24px 28px;
+	float:left;
+	background:#f1f1f4;
+}
+.contact-detail .address, .contact-detail .phone, .contact-detail .email{
+	float:left;
+	padding:15px 20px;
+}
+.contact-detail .phone, .contact-detail .email{
+	padding:26px 20px;
+}
+.contact-detail p{
+	margin:0;
+	padding:0;
+	line-height:22px;
+	font-size:15px;
+}
+.contact-form .form-control::-moz-placeholder{color:#656565;opacity:1}
+.contact-form .form-control:-ms-input-placeholder{color:#656565}
+.contact-form .form-control::-webkit-input-placeholder{color:#656565}
+
+/*
+ 5) Purchase Now
+ ----------------------------------------*/
+.purchase-now {
+	border: #e5e7e9;
+	background: #f2f2f2;
+	padding: 48px 0px;
+	font-size:27px;
+	color:#2e3745;
+	font-weight:100;
+	
+}
+.buy-now {
+	font-size:18px;
+	text-transform:uppercase;
+}
+.buy-now  .icon{
+	font-size:30px;
+	    float: left;
+    margin-right: 15px;
+}
+         /*
+ 12) Footer
+ ----------------------------------------*/
+ .footer-section{
+	 background:#18212b;
+	 text-align:center;
+ }
+ .footer-section:before{
+	 height:1px;
+	 background:#f2f2f2;
+	 content:"";
+	 display:block;
+	 position:relative;
+	 top:-99px;
+ }
+ .footer-section .footer-logo{
+	 padding:0px 0px 20px;
+ }
+ .footer-section .gray{
+	 color:#627681;
+ }
+ .footer-section .blue{
+	 color:#2a4b72;
+ }
+ .footer-section .footer-social{
+	 position:relative;
+	 margin:auto;
+	 display:block;
+	 width:250px;
+	 margin-top:50px;
+	 
+ }
+ .footer-section .footer-social .icon-box{
+	 width:35px;
+	 height:35px;
+	 -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+	background:#ccc;
+	display:block;
+	float:left;
+	margin-left:20px;
+ }
+ .footer-section .footer-social .icon-box .fa{
+	 -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+	color:#fff;
+	
+ }
+ .footer-section .footer-social .icon-box:nth-child(1){
+	 background:#3b5999;
+ }
+ .footer-section .footer-social .icon-box:nth-child(2){
+	 background:#00acee;
+ }
+  .footer-section .footer-social .icon-box:nth-child(3){
+	 background:#de4b3b;
+ }
+ .footer-section .footer-social .icon-box:nth-child(4){
+	 background:#0379b7;
+ }
+ 
+  
+ /**
+* Preloader Styles.
+**/
+
+
+.preloader{ position:fixed; left:0px; top:0px; width:100%; height:100%; z-index:999999; background-color:#ffffff; background-position:center center; background-repeat:no-repeat; background-image:url(../img/loader.gif);}

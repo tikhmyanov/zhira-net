@@ -1,0 +1,34 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	.our-classes-section .classes-list .item{
+		margin-top:80px;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	.navbar-brand>img{
+		width:100%;
+	}
+	.our-classes-section .classes-list .item{
+		margin-top:80px;
+	}
+
+}
